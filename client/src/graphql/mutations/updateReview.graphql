@@ -1,0 +1,5 @@
+mutation UpdateReview($bookId: Int!, $rating: Float!, $text: String) {
+  updateReview(bookId: $bookId, input: { rating: $rating, text: $text }) {
+    ...RegularReview
+  }
+}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing header renders correctly 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  className="makeStyles-header-1"
+  container={true}
+  direction="column"
+  justify="center"
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <MenuBookIcon
+      className="makeStyles-icon-4"
+    />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <h1
+      className="makeStyles-title-3"
+    >
+      What to read next.. ?
+    </h1>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+  >
+    <SearchField />
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

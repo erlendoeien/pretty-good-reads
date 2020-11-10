@@ -1,0 +1,12 @@
+fragment RegularReview on Review {
+    reviewItemId
+    reviewedById
+    rating
+    text
+    updatedAt
+    createdAt
+    reviewedBy {
+        firstName
+        lastName
+    }
+}

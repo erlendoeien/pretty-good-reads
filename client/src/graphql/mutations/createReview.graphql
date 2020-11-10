@@ -1,0 +1,5 @@
+mutation CreateReview($bookId: Int!, $rating: Float!, $text: String) {
+  createReview(bookId: $bookId, input: { rating: $rating, text: $text }) {
+    ...RegularReview
+  }
+}

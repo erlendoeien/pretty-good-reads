@@ -1,0 +1,13 @@
+query MyProfile {
+  me {
+    ...RegularUser
+    reviews {
+      ...RegularReview
+      reviewItem {
+        id
+        title
+        bookCoverUrl
+      }
+    }
+  }
+}

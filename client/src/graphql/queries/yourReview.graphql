@@ -1,0 +1,7 @@
+query YourReview($bookId: Int!) {
+    book(id: $bookId) {
+        yourReview {
+            ...RegularReview
+        }
+    }
+}

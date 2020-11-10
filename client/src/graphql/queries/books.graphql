@@ -1,0 +1,17 @@
+query Books($options: PaginatedBooksInput!) {
+    books(options: $options) {
+        totalCount
+        books {
+            id
+            title
+            publicationDate
+            bookCoverUrl
+            publisher
+            isbn
+            authors {
+                firstName
+                lastName
+            }
+        }
+    }
+}
