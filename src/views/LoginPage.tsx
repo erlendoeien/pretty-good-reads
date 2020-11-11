@@ -65,10 +65,7 @@ const LoginPage: React.FC = () => {
         if (response.data?.login.errors) {
             addServerErrors<FormInputs>(toErrorMap(response.data.login.errors), setError);
         }
-        if (response.data?.login.user) {
-            console.log('Successful login');
-            setRedirect(true);
-        }
+        if (response.data?.login.user) setRedirect(true);
     });
 
     if (redirect) {
