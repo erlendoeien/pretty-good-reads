@@ -12,7 +12,6 @@ interface RoutePropsWithChildren extends RouteProps {
  */
 const PrivateRoute: FC<RoutePropsWithChildren> = ({ children, ...rest }) => {
     const { data } = useMeQuery();
-    console.log('Is not authenticated, redirect');
 
     return (
         <Route
