@@ -36,7 +36,7 @@ interface IProps {
 
 const Navbar: FC<IProps> = (props) => {
     const classes = useStyles();
-    const { data, loading } = useMeQuery({ fetchPolicy: 'cache-and-network' });
+    const { data, loading } = useMeQuery();
     const [logoutMutation, { client }] = useLogoutMutation({
         // Clear store for user related queryies instead of invalidating me-query
         onCompleted() {
