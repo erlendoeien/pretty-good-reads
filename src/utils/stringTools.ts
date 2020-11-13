@@ -5,12 +5,8 @@
  * @returns {String} Splitted into words
  */
 export function splitPascalCase(word: string) {
-    // const wordRe = /($[a-z])|[A-Z][^A-Z]+/g;
-    // const match = word.match(wordRe);
-    // console.log(match);
     const result = word.replace(/([A-Z])/g, ' $1');
     const finalResult = result.charAt(0).toUpperCase() + result.slice(1);
-    console.log(finalResult);
     return finalResult;
     // return match ? match.join(' ') : match;
 }

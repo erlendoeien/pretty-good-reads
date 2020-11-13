@@ -91,7 +91,7 @@ const CreateUpdateReview: React.FC<ICreateUpdateReview> = ({
         const mutVariables = { bookId, rating, text };
 
         if (yourReviewExists) {
-            const response = await updateReview({
+            await updateReview({
                 variables: mutVariables,
                 update: (cache) => {
                     cache.evict({ id: `User:${meData?.me?.id}`, fieldName: 'reviews' });
@@ -99,9 +99,8 @@ const CreateUpdateReview: React.FC<ICreateUpdateReview> = ({
                     cache.gc();
                 }
             });
-            console.log(response);
         } else {
-            const response = await createReview({
+            await createReview({
                 variables: mutVariables,
                 update: (cache) => {
                     // if (cache.evict({ fieldName: 'book:{}' })) cache.gc();
@@ -110,7 +109,6 @@ const CreateUpdateReview: React.FC<ICreateUpdateReview> = ({
                     cache.gc();
                 }
             });
-            console.log(response);
         }
 
         if (onCloseModal !== undefined) {

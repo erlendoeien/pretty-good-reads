@@ -10,7 +10,6 @@ const ResultsPerPage: FC = () => {
     const limit = useReactiveVar(limitVar);
 
     const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-        console.log(event.target.value);
         if (isNaN(parseInt(event.target.value as string, 10))) throw new Error('Invalid limit');
         limitVar(parseInt(event.target.value as string, 10) as ValidLimits);
     };

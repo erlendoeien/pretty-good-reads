@@ -97,23 +97,11 @@ const SortItem: FC<SortItemProps> = ({ order }) => {
      */
     const handleFieldChange = (event: React.ChangeEvent<{ value: unknown }>) => {
         const newField = event.target.value as string;
-        // console.log('OldSorts', sort);
         sortVar([{ sortField: newField, sortValue: 'ASC' }]);
-        // console.log('New sorts:', [newField, 'ASC']);
-        // return;
-        // const newSort = sort.map((sortPair, index) => {
-        //     if (index - 1 === order) {
-        //         return [newField, sortPair[1]] as SortFieldValue;
-        //     }
-        //     return sortPair;
-        // });
-        // sortVar(newSort);
     };
 
     const handleValueChange = (e: React.MouseEvent) => {
         e.preventDefault();
-        // console.log(sort[order]);
-        // sortVar([sort[0], event.currentTarget.value])
         if (sort[order].sortValue === 'ASC')
             return sortVar([{ ...sort[order], sortValue: 'DESC' }]);
         return sortVar([{ ...sort[0], sortValue: 'ASC' }]);

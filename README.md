@@ -1,16 +1,16 @@
 # Pretty good reads
 
-## For the API and backend, checkout [https://github.com/erlendoeien/pretty-good-reads-api](https://github.com/erlendoeien/pretty-good-reads-api)
+For the backend and API, see [erlendoeien/pretty-good-reads-api](https://github.com/erlendoeien/pretty-good-reads-api)
 
-For live demo of the app, checkout ##HEROKU URL
+For a live demo of the app, checkout [pretty-good-reads.herokuapp.com](https://pretty-good-reads.herokuapp.com/)<sup>\*</sup>
 
-As a part of the course IT2810 Web development, I and two others created this book review app. The main focus of this project was creating a
+As a part of the course IT2810 Web development, I created this book review app together with two others. The main focus of this project was creating a
 full stack app. Additionally, some of the goals were to learn searching, sorting, pagination and filtering larger datasets. In our database, we
-have about 11k books and 9000 authors. The search is based on book title, authors and ISBNs (regular and ISBN-13). Though the UI does not include methods to filter the dataset, there are backend resolvers for it. There is also backend support for ordered sort options (e.g. sorting on title, the publication date), which is not part of the UI. The Pagination is offset/limit based as the book-dataset is static (as of now).
+have about 11k books and 9000 authors (live demo has roughly ~2000 books). The search is based on book title, authors and ISBNs (regular and ISBN-13). Though the UI does not include methods to filter the dataset, there are backend resolvers for it. There is also backend support for ordered sort options (e.g. sorting on title, the publication date), which is not part of the UI. The Pagination is offset/limit based as the book-dataset is static (as of now).
 
 Another key point was understanding state management. As we wanted to keep our dependencies few, we tried using Apollo for that as well, (over)using the [Reactive variables](https://www.google.com/search?q=apollo+reactive+varibles&oq=apollo+reactive+&aqs=chrome.1.69i57j69i59l3j35i39j69i60l3.2891j0j7&sourceid=chrome&ie=UTF-8). We also explored some of Mobx, though the usecase for the mobx store was not implemeted completely.
 
-For an app more focused on RWD, checkout [github.com/erlend.oeien](https://github.com/erlend.oeien) ## INSERT ON FIXX
+_For an app more focused on RWD, checkout [https://github.com/erlendoeien/art-gallery](https://github.com/erlendoeien/art-gallery)._
 
 ## Technologies
 
